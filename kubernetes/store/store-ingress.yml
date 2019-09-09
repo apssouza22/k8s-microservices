@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: store
+  namespace: jhipster
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+
+spec:
+  rules:
+    - host: store.local.dev
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: store
+              servicePort: 8080
+          - path: /invoice/
+            backend:
+              serviceName: invoice
+              servicePort: 8082
+          - path: /notification/
+            backend:
+              serviceName: notification
+              servicePort: 8083
+          - path: /product/.*
+            backend:
+              serviceName: product
+              servicePort: 8081
