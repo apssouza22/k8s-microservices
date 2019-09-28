@@ -13,11 +13,12 @@ logSummary(){
     echo "#####################################################"
 }
 
-kubectl apply -f ./namespace.yml
-kubectl apply -f ./store/
-kubectl apply -f ./invoice/
-kubectl apply -f ./notification/
-kubectl apply -f ./product/
+kubectl apply -f namespace.yml
+kubectl label namespace jhipster istio-injection=enabled --overwrite=true
+kubectl apply -f store/
+kubectl apply -f invoice/
+kubectl apply -f notification/
+kubectl apply -f product/
 
 kubectl label namespace jhipster istio-injection=enabled --overwrite=true
 kubectl apply -f istio/

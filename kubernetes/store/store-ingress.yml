@@ -8,7 +8,7 @@ metadata:
 
 spec:
   rules:
-    - host: ingress.local
+    - host: ingress.local2
       http:
         paths:
           - path: /
