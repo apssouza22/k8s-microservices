@@ -59,15 +59,15 @@ spec:
           ports:
             - name: http
               containerPort: 8080
-          readinessProbe:
-            httpGet:
-              path: /services/management/health
-              port: http
-            initialDelaySeconds: 20
-            periodSeconds: 15
-            failureThreshold: 6
-          livenessProbe:
-            httpGet:
-              path: /services/management/health
-              port: http
-            initialDelaySeconds: 120
+#          readinessProbe:
+#            httpGet:
+#              path: /services/management/health
+#              port: http
+#            initialDelaySeconds: 20
+#            periodSeconds: 15
+#            failureThreshold: 6
+#          livenessProbe:
+#            httpGet:
+#              path: /services/management/health
+#              port: http
+#            initialDelaySeconds: 120

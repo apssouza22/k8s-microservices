@@ -227,4 +227,5 @@ deployment {
   kubernetesServiceType Ingress
   kubernetesNamespace jhipster
   ingressDomain "local.dev"
+  istio true
 }

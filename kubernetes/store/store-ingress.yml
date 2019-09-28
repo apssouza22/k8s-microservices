@@ -4,11 +4,11 @@ metadata:
   name: store
   namespace: jhipster
   annotations:
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/rewrite-target: /
 
 spec:
   rules:
-    - host: store.local.dev
+    - host: ingress.local
       http:
         paths:
           - path: /

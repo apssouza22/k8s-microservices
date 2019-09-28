@@ -5,6 +5,7 @@ metadata:
   namespace: jhipster
   labels:
     app: store
+
 spec:
   selector:
     app: store
