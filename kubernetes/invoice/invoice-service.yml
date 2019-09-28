@@ -6,7 +6,6 @@ metadata:
   labels:
     app: invoice
 spec:
-  type: NodePort
   selector:
     app: invoice
   ports:

@@ -18,7 +18,7 @@
     "kubernetesNamespace": "jhipster",
     "kubernetesServiceType": "Ingress",
     "ingressDomain": "local.dev",
-    "istio": false,
+    "istio": true,
     "jwtSecretKey": "YWJjZjVjODQ4NjgwNDg5NDcxYmFiODQ2NmI0ZGU3ZDhiNmYwOGY4ZDllMDEwOTA4Mzg1MTMzMWU1MDU0YTIxMTIxNmU2ZDcwYTFiMzI1ZmVmYzU3Zjg4Zjk2MDUxNWViYTNiMQ=="
   }
 }

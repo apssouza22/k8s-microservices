@@ -165,6 +165,8 @@ spec:
     metadata:
       labels:
         app: notification-mongodb
+      annotations:
+        sidecar.istio.io/inject: 'false'
     spec:
       initContainers:
         - name: config

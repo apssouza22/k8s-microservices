@@ -12,6 +12,8 @@ spec:
     metadata:
       labels:
         app: product-mysql
+      annotations:
+        sidecar.istio.io/inject: 'false'
     spec:
       volumes:
         - name: data

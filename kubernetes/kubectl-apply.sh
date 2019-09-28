@@ -7,6 +7,9 @@ logSummary(){
     echo "#####################################################"
     echo "Please find the below useful endpoints,"
     echo "Gateway - http://store.local.dev"
+    echo "Jaeger - http://jaeger.${ISTIO_SYSTEM}local.dev"
+    echo "Grafana - http://grafana.${ISTIO_SYSTEM}local.dev"
+    echo "Kiali - http://kiali.${ISTIO_SYSTEM}local.dev"
     echo "#####################################################"
 }
 
@@ -16,4 +19,6 @@ kubectl apply -f ./invoice/
 kubectl apply -f ./notification/
 kubectl apply -f ./product/
 
+kubectl label namespace jhipster istio-injection=enabled --overwrite=true
+kubectl apply -f istio/
 logSummary
